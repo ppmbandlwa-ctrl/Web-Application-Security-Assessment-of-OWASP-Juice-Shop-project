@@ -3,7 +3,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
 import java.util.*;
 
-/** Converts findings.csv into a scored, mapped JSON report (no libraries needed).
+/** Converts findings.csv into a scored, mapped JSON report
  *  CSV header: title,category,location,likelihood,impact,owner,treatment,remediation
  *  category is the OWASP code, e.g. A03.   Run: java FindingsExport.java findings.csv > report.json */
 public class FindingsExport {

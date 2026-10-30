@@ -1,0 +1,3 @@
+title,category,location,likelihood,impact,owner,treatment,remediation
+EXAMPLE ONLY - header configuration requires review,A05,HTTP response headers,3,3,Application owner,Mitigate,Compare observed headers with requirements and configure appropriate values
+EXAMPLE ONLY - cookie attributes require review,A05,Session cookie,3,4,Application owner,Mitigate,Review each cookie and configure appropriate Secure HttpOnly and SameSite attributes

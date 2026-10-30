@@ -36,7 +36,7 @@ public class HeadersCheck {
             System.err.println("Refusing: only test systems you own or are authorized to test.");
             System.exit(1);
         }
-        HttpClient client = HttpClient.newBuilder().connectTimeout(Duration.ofSeconds(10)).build();
+        HttpClient client = HttpClient.newBuilder().version(HttpClient.Version.HTTP_1_1).connectTimeout(Duration.ofSeconds(10)).build();
         HttpRequest req = HttpRequest.newBuilder(uri).timeout(Duration.ofSeconds(10))
                 .header("User-Agent", "assessment-lab/1.0").GET().build();
         HttpResponse<Void> res = client.send(req, HttpResponse.BodyHandlers.discarding());
@@ -60,3 +60,4 @@ public class HeadersCheck {
         System.out.printf("%n%d of %d expected headers missing.%n", missing, EXPECTED.size());
     }
 }
+

@@ -1,0 +1,9 @@
+﻿title,category,location,likelihood,impact,owner,treatment,remediation
+VUL-001 SQL injection in login and product search,A03,routes/login.ts; routes/search.ts,5,5,Application maintainer,Mitigate,Use parameterized SQL queries and bind parameters
+VUL-002 Potential SSRF in profile image upload,A10,routes/profileImageUrlUpload.ts,4,5,Application maintainer,Mitigate,Validate destinations and block private network access
+VUL-003 Weak password hashing and embedded JWT key material,A07,lib/insecurity.ts,4,5,Application maintainer,Mitigate,Use Argon2id for passwords and securely manage signing keys
+VUL-004 Dynamic evaluation of profile data,A03,routes/userProfile.ts,4,5,Application maintainer,Mitigate,Remove eval and treat user input as data
+VUL-005 Weak redirect URL validation,A01,routes/redirect.ts; lib/insecurity.ts,3,3,Application maintainer,Mitigate,Validate parsed URL origins against an explicit allowlist
+VUL-006 Potential application log disclosure,A01,server.ts,3,4,Application maintainer,Mitigate,Restrict log access and redact sensitive information
+VUL-007 Incomplete browser security controls,A05,server.ts; routes/userProfile.ts,3,3,Application maintainer,Mitigate,Implement appropriate CSP and verify security headers
+VUL-008 Training configuration and backup exposure risk,A05,config/defcon33.yml,2,4,Application maintainer,Accept in isolated lab,Restrict training features to isolated environments and protect backups

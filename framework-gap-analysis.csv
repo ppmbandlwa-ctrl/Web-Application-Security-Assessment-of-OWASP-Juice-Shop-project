@@ -1,0 +1,5 @@
+area,framework,desired_outcome,current_state,evidence,gap_statement,action,owner,deadline,status
+Security headers,NIST CSF 2.0,Documented and appropriate HTTP security configuration,Not assessed,Pending,"Compare observed headers with application requirements and document gaps",Verify headers and agree remediation,Application owner,YYYY-MM-DD,Not started
+Access control,ISO/IEC 27001,Access restricted to authorised users and objects,Not assessed,Pending,"Compare verified authorisation behaviour with intended access rules",Test server-side authorisation with dummy accounts,Application owner,YYYY-MM-DD,Not started
+Logging and monitoring,NIST CSF 2.0,Relevant events are recorded and can be reviewed,Log source and format not yet verified,Pending,"Confirm available event sources, format, and coverage",Identify supported log source and validate parser,Operations owner,YYYY-MM-DD,Not started
+Risk treatment,ISO/IEC 27001,Risks have owners and approved treatment decisions,Not assessed,Pending,"Confirm each verified finding has an accountable owner and treatment",Review findings register with risk owners,Project lead,YYYY-MM-DD,Not started
